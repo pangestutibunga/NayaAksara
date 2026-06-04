@@ -68,30 +68,35 @@ st.markdown("""
 
 
 # ── Loader data ──────────────────────────────────────────────
+
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
 @st.cache_data
 def load_distribusi():
-    return pd.read_csv("distribusi_kelas.csv")
+    return pd.read_csv(BASE_DIR / "distribusi_kelas.csv")
 
 @st.cache_data
 def load_metadata():
-    df = pd.read_csv("metadata_dataset.csv")
+    df = pd.read_csv(BASE_DIR / "metadata_dataset.csv")
     return df.iloc[0].to_dict()
 
 @st.cache_data
 def load_quality():
-    return pd.read_csv("quality_analysis.csv")
+    return pd.read_csv(BASE_DIR / "quality_analysis.csv")
 
 @st.cache_data
 def load_quality_performance():
-    return pd.read_csv("quality_performance_merged.csv")
+    return pd.read_csv(BASE_DIR / "quality_performance_merged.csv")
 
 @st.cache_data
 def load_rq_summary():
-    return pd.read_csv("rq_summary.csv")
+    return pd.read_csv(BASE_DIR / "rq_summary.csv")
 
 @st.cache_data
 def load_label_mapping():
-    return pd.read_csv("label_mapping.csv")
+    return pd.read_csv(BASE_DIR / "label_mapping.csv")
 
 # Load semua data
 try:
