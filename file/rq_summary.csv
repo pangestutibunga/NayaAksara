@@ -1,0 +1,3 @@
+research_question,topik,best_val_accuracy,best_epoch,total_epoch,avg_f1_test,avg_precision_test,avg_recall_test,kelas_terbaik,kelas_terlemah,kelas_dibawah_92,gap_train_val_final,status_overfitting,pct_high_brightness,pct_dark_images,corr_brightness_f1,corr_contrast_f1
+RQ1,Optimasi Arsitektur CNN,0.8788,47,48,0.9475,0.9495,0.947,ma,na,"['na', 'ka', 'dha']",0.1262,Sedikit Overfit,,,,
+RQ2,Robustness & Data Augmentasi,0.8788,47,48,0.9475,0.9495,0.947,ma,na,"['na', 'ka', 'dha']",,,98.43,0.89,0.2156,-0.148

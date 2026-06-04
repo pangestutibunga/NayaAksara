@@ -1,0 +1,2 @@
+jumlah_kelas,total_train,total_val,total_test,total_keseluruhan,min_per_kelas_train,max_per_kelas_train,kelas_terbanyak,kelas_tersedikit,rasio_imbalance,gambar_corrupt,image_size,avg_brightness_train,avg_contrast_train
+20,2927,619,650,4196,142,151,ba,ha,1.0634,0,128,245.5,38.3
